@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" type="text/css" href="estilo/style.css">
+</head>
+<body>
+    <!--criar divisão no documento com id = "interface"-->
+    <div id="interface">
+        <header id="cabecalho">
+        <h1><b>Google Glass</b></h1>
+        <h2><b>revolução do Google está chegando</b></h2>        
+        <img id="icone" src="imagens/google-glass.png" alt="Google Glass" width="200">
+        <nav id="Menu">
+        
+            <h1>Menu Principal</h1>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="especificações.html">Especificações</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="multimídia.html">Multimídia</a></li>
+                    <!--pode criar listas dentro de listas-->
+                    <!--<ul type="square">
+                        <li>Música</li>
+                        <li>Fotos</li>
+                        <li>Videos</li>
+                    </ul>-->
+                <li><a href="fale_conosco.html">Fale conosco</a></li>
+                </ul>
+        </nav>
+
+        </header>
+        <section id="corpo">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <!--&nbsp; que significa "Non- Breaking Space" para dar espaço na linha-->
+                    <h3>tecnologia &nbsp; > &nbsp; Inovações</h3>
+                    <h1>Saiba tudo sobre o Google Glass</h1>
+                    <h2>por Alex Nascimento</h2>
+                    <h3 class="R">Atualizado em 15/março/2022</h3>
+                </header>
+
+                <!--usa o "<em></em> para deixar em italico e enfatizar a palavra para os navegadores"-->
+                <!--use tag "<del></del>" para deletar texto e deixo riscado na pagina-->
+                <!--para sublinhar tambem atravez da tag "span" com CSS-->
+                <h2>O que é</h2>
+                <p> <b><u>Google Glass</u></b> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Tambem chamado de <a href="https://www.google.com/glass/start/" target="_blank"><i>project Glass</i></a>, o 
+                eletronico é capaz de tirar fotos atravez de <span style="text-decoration: underline;">comando de voz</span>, enviar mensagens instantaneas e realizar videoconferencias. Seu lançamento estava previsto para 2014, e seu preço 
+                deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de teste e ja possui um video totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou
+                novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+                
+                <figure class="foto-legenda">
+                <img src="imagens/google.jpg" alt="usando Google Glass" width="600" height="338">
+                <figcaption>
+                    <h3>Google Glass</h3>
+                    <p>uma nova maneira de ver o mundo</p>
+                </figcaption>
+                </figure>
+                
+                <h2>Data de lançamento</h2>
+                <p>não há uma data especificada e oficial para o dispositivo ser lançado, ainda.</p>
+
+                <h2>Especificações técnicas</h2>
+                <table id="espec">
+                <caption>Tabela Técnica do Google Glass <span>mar/2013</span></caption>
+
+                <tr><td class="ce">Tela</td><td class="cd">resolução equivalente a tela de 25"</td></tr>
+                <tr><td rowspan="2" class="ce">Camera</td> <td class="cd">5MP para fotos</td></tr>
+                <tr><td class="cd">720p para videos</td></tr>
+                <tr><td rowspan="2" class="ce">Conectivdade</td> <td class="cd">Wi-Fi</td></tr>
+                <tr><td class="cd"> Bluetooth</td></tr>
+                <tr><td class="ce">Memoria interna</td> <td class="cd">12GB</td></tr>
+                </table>
+                <h2>Como funciona</h2>
+                <p>De acordo com fontes proximas do Google, os oculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente ao
+                olhos do usuario. Com o uso de uma camera e GPS, voce pode se situar, assim como selecionar opçoes com o 
+                movimento da cabeça.</p>
+                
+                <h2>O que voce pode fazer com o Google Glass</h2>
+                <p>O video de divulgação do Google mostra que voce pode se transforma numa especie de
+                "super-<wbr/>humano"</p>
+
+                [aqui entra um video]
+            </article>
+        </section>
+        <aside id="lateral">
+            <h1>Outras noticias</h1>
+            <h2>video mais recente</h2>
+
+            [aqui entra um video]
+
+            <h2>Novidades no Glass</h2>
+            <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda 
+            inedita no mercado: a gigante das buscas usara um sistema de audio baseado na transduçao por conduta.
+            Atraves das hastes dos oculos, o som sera transmitido para o ouvido do usuario por meio de microvibraçoes
+            em determinados ossos de sua cabeça, sem usar nenhum tipo de autofalante.</p>
+
+            <p>Alem da surpresa do audio, a tela contada a frente do olho do usuario tambem chamou atençao. Serao 640 x 360
+            pixels de resolução que, em proporçao, equivalente a um monitor de 25 polegadas de alta definição
+            colocado a 2,5 metros de distancia do espectador.</p>
+        </aside>
+        <footer id="rodape">
+            <p>Copyright &copy; 2022  - by Alex Nascimento<br>
+            <a href="https://www.linkedin.com/in/soualeques/" target="_blank">Linkedin</a> | <a href="https://github.com/soualeques" target="_blank">Github</a></p>
+        </footer>
+    </div>
+</body>
+</html>
