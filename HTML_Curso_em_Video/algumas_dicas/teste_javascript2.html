@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Javascript 2</title>
+    <script>
+        function acenderLampada()
+        {
+            //alert('Lampada Acendeu!')
+            document.getElementById("luz").src="../imagens/lampada_acesa.jpeg"
+        }
+        function apagarLampada()
+        {
+            document.getElementById("luz").src="../imagens/lampada_apagada.jpeg";
+        }
+        function quebrarLampada()
+        {
+            document.getElementById("luz").src="../imagens/lampada_quebrada.jpeg"
+        }
+    </script>
+</head>
+    <body>
+    <h1>Acenda a lâmpada</h1>
+    <!--Quando clicar na lampada aparecera um alerta na tela com a mensagem-->
+    <!--<img src="../imagens/lampada.jpeg" alt="uma lampada apagada" onclick="acenderLampada()">-->
+    <!--Quando passar o mouse sobre a lampada aparecera a mensagem-->
+    <img src="../imagens/lampada_apagada.jpeg"
+     id="luz" 
+     alt="uma lampada apagada" 
+     onmousemove="acenderLampada()" 
+     onmouseout="apagarLampada()"
+     onclick="quebrarLampada()"/>
+</body>
+</html>

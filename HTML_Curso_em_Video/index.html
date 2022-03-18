@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="estilo/style.css">
 </head>
+<script src="scripts/funcoes.js"></script>
 <body>
     <!--criar divisão no documento com id = "interface"-->
     <div id="interface">
@@ -18,17 +19,17 @@
         
             <h1>Menu Principal</h1>
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="especificações.html">Especificações</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="multimídia.html">Multimídia</a></li>
+                <li onmouseover="iconemenu('imagens/home.png')" onmouseout="iconemenu('imagens/google-glass.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="iconemenu('imagens/espec.png')" onmouseout="iconemenu('imagens/google-glass.png')"><a href="index.html"><a href="especificações.html">Especificações</a></li>
+                <li onmouseover="iconemenu('imagens/fotos.png')" onmouseout="iconemenu('imagens/google-glass.png')"><a href="index.html"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="iconemenu('imagens/multimidia.png')" onmouseout="iconemenu('imagens/google-glass.png')"><a href="index.html"><a href="multimídia.html">Multimídia</a></li>
                     <!--pode criar listas dentro de listas-->
                     <!--<ul type="square">
                         <li>Música</li>
                         <li>Fotos</li>
                         <li>Videos</li>
                     </ul>-->
-                <li><a href="fale_conosco.html">Fale conosco</a></li>
+                <li onmouseover="iconemenu('imagens/contato.png')" onmouseout="iconemenu('imagens/google-glass.png')"><a href="index.html"><a href="fale_conosco.html">Fale conosco</a></li>
                 </ul>
         </nav>
 
