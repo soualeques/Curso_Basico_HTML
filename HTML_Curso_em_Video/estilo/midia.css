@@ -1,0 +1,23 @@
+div#tv-radio
+{
+    width: 600px;
+    height: 400px;
+    background: url('../imagens/tvradio1.jpg') no-repeat;
+    margin: auto
+}
+audio#musica
+{
+    position: relative;
+    top: 257px;
+    left: 30px;
+    display: block;
+    width: 190px;
+    height: 100px;
+}
+video#tv
+{
+    left: 250px;
+    position: relative;
+    top: 36px;
+    display: block;
+}
