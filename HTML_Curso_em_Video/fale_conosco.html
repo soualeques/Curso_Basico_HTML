@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <link rel="stylesheet" type="text/css" href="estilo/style.css">
+    <link rel="stylesheet" type="text/css" href="estilo/form.css">
 </head>
 <script src="scripts/funcoes.js"></script>
+<script>
+    function Calc_preco()
+    {
+        var qtd = parseInt(document.getElementById('cQuant').value);
+        tot = qtd * 1500
+        document.getElementById('cPrec').value = tot
+    }
+</script>
+
 <body>
     <!--criar divisão no documento com id = "interface"-->
     <div id="interface">
@@ -34,9 +44,88 @@
         </nav>
 
         </header>
-        
-        
-        
+        <section id="corpo-full">
+            <article id='noticia-principal'>
+                <header id="cabecalho-artigo">
+                    <h3 id="titulo3">Glass > Fale Conosco</h3>
+                    <h1>Galeria de imagens do Google Glass</h1>
+                    <h2>por Alex Nascimento</h2>
+                    <h3 class="R">Atualizado em março/2022</h3>
+                </header>
+                <form method="post" id="fcontato" action="mailto:aleques0611@gmail.com" oninput="Calc_preco()">
+                    <fieldset id="usuario">
+                        <legend>identificaçao do usuario</legend>
+                            <p><label for="cNome">Nome:</label> <input type="text" name="tName" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"> </p>
+                            <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"></p>
+                            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="E-mail"></p>
+                            <fieldset><legend>sexo:</legend>
+                               <input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">masculino</label><br>
+                               <input type="radio" name="tSexo" id="cFem"> <label for="cFem">feminino</label>
+                            </fieldset>
+                            <p><label for="cNasc">data de Nascimento:<input type="date" name="tNasc" id="cNasc"></label></p>
+                    </fieldset>
+                    <fieldset id="endereco"> 
+                        <legend>endereço do usuario</legend>
+                            <p><label for="cRua">logradouro: </label><input type="text" name="tRua" id="cRua" placeholder="Endereço" size="30" maxlength="80"></p>
+                            <p><label for="cNum">numero: </label><input type="number" name="tNum" id="cNum" min="0" max="9999"></p>
+                            <p><label for="cEst">estado: </label>
+                                <select name="tEst" id="cEst">
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AP</option>
+                                    <option>AM</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MT</option>
+                                    <option>MS</option>
+                                    <option>MG</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PR</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>RJ</option>
+                                    <option>RN</option>
+                                    <option>RS</option>
+                                    <option>RO</option>
+                                    <option>RR</option>
+                                    <option>SC</option>
+                                    <option>SP</option>
+                                    <option>SE</option>
+                                    <option>TO</option>
+                                </select>
+                            </p>
+                            <p><label for="cCid">cidade: </label><input type="text" name="tCid" id="cCid" size="20" maxlength="30" list="cidades"></p>
+                            <datalist id="cidades">
+                                <option value="Carlópolis"></option>
+                                <option value="Siqueira Campos"></option>
+                                <option value="Curitiba"></option>
+                                <option value="Cascavel"></option>
+                                <option value="Joaquim Tavora"></option>
+                                <option value="Jacarezinho"></option>
+                            </datalist>
+                    </fieldset>
+                    <fieldset id="mensagem">
+                        <legend>mensagem do usuario</legend>
+                            <p><label for="cUrg"> grau de urgencia:</label> baixa<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5">alta</p>
+                            <p><label for="cMsg">mensagem:</label> <textarea name="tMsg" id="cMsg" cols="30" rows="5" placeholder="deixe aqui a sua mensagem"></textarea> </p>
+                    </fieldset>
+                    <fieldset id="adquirir">
+                        <legend>quero um Google Glass</legend>
+                            <p><input type="checkbox" name="tPed" id="cPed"><label for="cPed">gostaria de adquirir um Google Glass quando disponivel</label></p>
+                            <p><label for="cCor">cor:</label> <input type="color" name="tCor" id="cCor"> </p>
+                            <p><label for="cQuant">quantidade:</label><input type="number" name="tQuant" id="cQuant" min="0" max="100" value="0"></p>
+                            <p><label for="cPrec">preço total: R$</label><input type="text" name="tPrec" id="cPrec" placeholder="total a pagar" readonly></p>
+                    </fieldset>    
+                        <input type="submit" value="Enviar">
+                    
+                </form>
+            </article>
+        </section>
         <footer id="rodape">
             <p>Copyright &copy; 2022  - by Alex Nascimento<br>
             <a href="https://www.linkedin.com/in/soualeques/" target="_blank">Linkedin</a> | <a href="https://github.com/soualeques" target="_blank">Github</a></p>
